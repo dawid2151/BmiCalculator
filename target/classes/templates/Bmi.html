@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>BMI Calculator</title>
+</head>
+<body>
+    <h1>Uniwersalny kalkulator bmi</h1>
+
+    <form th:object="${bmiInformationDto}" th:action="@{/calculate}" method="post">
+        <label for="weight">Waga (kg):</label>
+        <input type="text" id="weight" name="weight" th:field="*{weight}" /><br />
+
+        <label for="height">Wysokość (m):</label>
+        <input type="text" id="height" name="height" th:field="*{height}" /><br />
+
+        <input type="submit" value="Oblicz" />
+    </form>
+<br>
+    <form th:action="@{/logout}" method="post">
+        <input type="submit" value="Wyloguj"/>
+    </form>
+</body>
+</html>

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>BMI Calculator</title>
+</head>
+<body>
+    <h1>Uniwersalny kalkulator bmi</h1>
+
+    <h1>Wynik</h1>
+    <p th:text="${result}"></p>
+    <a th:href="@{/bmi}">Jeszcze raz</a>
+</body>
+</html>

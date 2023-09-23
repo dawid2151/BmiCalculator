@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>BMI Calculator</title>
+</head>
+<body>
+    <h1 th:text="Witaj"></h1>
+    <h2>Wejdź w <a th:href="@{/bmi}">kalkulator</a> </h2>
+    <h3>Musisz się zalogować</h3>
+    <form th:action="@{/logout}" method="post">
+        <input type="submit" value="Wyloguj"/>
+    </form>
+</body>
+</html>
