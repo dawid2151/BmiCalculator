@@ -4,8 +4,8 @@ Projekt kalkulatora BMI
 Prosty kalkulator BMI wykorzystujący template'y Thymeleaf oraz autoryzację z użytkownikami wbudowanymi.
 
 Dostępni użytkownicy to: 
-login: user
-hasło: user
-oraz
-login: admin
-hasło: admin
+
+| # | Login | Hasło |
+|---|-------|-------|
+| 1 | user | user |
+| 2 | admin | admin |
